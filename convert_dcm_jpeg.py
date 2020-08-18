@@ -2,7 +2,8 @@ import pydicom as dicom
 import os, cv2, glob
 
 
-# method not working
+# there is a second method which is for .png files as jpegs are created by using lossy
+# and pngs by lossless compression, advisable to use png for better picture quality
 def dcm_to_jpg(filepath, jpgpath):
     PNG = False
     images_path = os.listdir(filepath)
